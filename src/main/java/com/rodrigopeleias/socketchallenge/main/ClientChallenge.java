@@ -1,17 +1,12 @@
 package com.rodrigopeleias.socketchallenge.main;
 
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.PrintStream;
-import java.net.Socket;
-import java.util.Scanner;
 
 import com.rodrigopeleias.socketchallenge.main.receiver.ClientThread;
-import com.rodrigopeleias.socketchallenge.model.Guess;
-import com.rodrigopeleias.socketchallenge.model.GuessedNumberType;
 
 public class ClientChallenge {
+	
+	public static boolean hasWinner = false;
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		new ClientChallenge().executa();		
